@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jquery.md5.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function($) {
+      $('#md5').click(function(){
+        $('#output').val($.MD5($('#input').val()));
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1 id="md5_example">MD5 Example</h1>
+  <label for="input">Input: </label><textarea name="input" rows="8" cols="40" id="input">Hello World!</textarea>
+  <hr>
+  <input type="button" name="md5" id="md5" value="MD5">
+  <hr>
+  <label for="output">Output: </label><textarea name="output" rows="8" cols="40" id="output"></textarea>
+  
+</body>
+</html>

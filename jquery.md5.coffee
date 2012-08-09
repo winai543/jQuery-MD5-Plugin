@@ -14,9 +14,7 @@
 *  http://www.webtoolkit.info/
 *
 ###
-do (jQuery) ->
-  $ = jQuery
-  
+do ($ = jQuery) ->  
   MD5 = (string) ->
     RotateLeft = (lValue, iShiftBits) ->
       return (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits))
